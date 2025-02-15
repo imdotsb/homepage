@@ -1,157 +1,220 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-  <title>@im.sb</title>
-  <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="https://cdn.sevencdn.com/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css">
-  <style>
-    /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
-*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246/0.5);--tw-ring-offset-shadow:0 0 transparent;--tw-ring-shadow:0 0 transparent;--tw-shadow:0 0 transparent;--tw-shadow-colored:0 0 transparent}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246/0.5);--tw-ring-offset-shadow:0 0 transparent;--tw-ring-shadow:0 0 transparent;--tw-shadow:0 0 transparent;--tw-shadow-colored:0 0 transparent}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.mx-5{margin-left:1.25rem;margin-right:1.25rem}.mx-auto{margin-left:auto;margin-right:auto}.my-20{margin-top:5rem}.mb-20,.my-20{margin-bottom:5rem}.mt-20{margin-top:5rem}.grid{display:grid}.h-40{height:10rem}.h-full{height:100%}.w-full{width:100%}.max-w-3xl{max-width:48rem}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.content-between{align-content:space-between}.gap-5{gap:1.25rem}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.border{border-width:1px}.border-sky-100{--tw-border-opacity:1;border-color:rgb(224 242 254/var(--tw-border-opacity))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity))}.bg-sky-50{--tw-bg-opacity:1;background-color:rgb(240 249 255/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.p-2{padding:.5rem}.p-4{padding:1rem}.text-center{text-align:center}.text-right{text-align:right}.text-5xl{font-size:3rem;line-height:1}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-normal{font-weight:400}.font-thin{font-weight:100}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity))}.hover\:font-normal:hover{font-weight:400}@media (min-width:768px){.md\:col-span-2{grid-column:span 2/span 2}.md\:mx-0{margin-left:0;margin-right:0}.md\:mb-48{margin-bottom:12rem}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:gap-10{gap:2.5rem}.md\:text-left{text-align:left}}
-  </style>
-</head>
-<body>
-<div class="container mx-auto mt-20">
-  <h1 class="mx-5 mb-20 text-5xl font-bold text-slate-800 md:mx-0 md:mb-48"><button onclick="location.reload()"><i class="bi bi-triangle-fill"></i></button> im.sb</h1>
-  <div class="w-full max-w-3xl">
-    <div class="mx-5 grid grid-cols-1 gap-5 font-thin md:mx-0 md:grid-cols-3 md:gap-10">
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50 md:col-span-2">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-mastodon"></i> Mastodon</h2>
-            <p class="text-slate-400">A mastodon instance hosts by im.sb</p>
-          </div>
-          <a href="https://imsb.app" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">imsb.app <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <h2 class="text-xl font-normal"><i class="bi bi-cloud-sun-fill"></i> 天气</h2>
-          <iframe allowtransparency="true" frameborder="0" width="100%" height="36" scrolling="no" src="https://tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=000000&f=c0c0c0&ltf=808080&htf=808080&q=1&e=1&a=1&c=54511&w=180&h=36&align=center"></iframe>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-file-image-fill"></i> JPG</h2>
-            <p class="text-slate-400">A images hosting</p>
-          </div>
-          <a href="https://jpg.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">jpg.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 md:col-span-2 bg-slate-50" style="background-image: url(https://7ed.net/bing/api?size=640x480);  background-position: center; background-size: cover;">
-        <div class="grid h-full content-between text-slate-600">
-          <div>&nbsp;</div>
-          <div class="text-right">
-            <a href="https://www.7ed.net/get-api/bing.html" target="_blank" class="p-2 text-white"><i class="bi bi-box-arrow-up-right"></i></a>
+  <head>
+    <link rel="preconnect" href="https://cdn.sevencdn.com">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" />
+    <title>@im.sb</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.sevencdn.com/npm/bootstrap-icons@1/font/bootstrap-icons.min.css" />
+    <script src="https://cdn.sevencdn.com/npm/@tailwindcss/browser@4/dist/index.global.min.js"></script>
+    <style>
+      .rainbow-heart{animation:rainbow 2s infinite!important}@keyframes rainbow{0%{color:red}16%{color:#ff7f00}33%{color:#d3b705}50%{color:#05b505}66%{color:#00f}83%{color:indigo}100%{color:#8f00ff}}
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-9 lg:gap-8">
+        <div class="rounded-lg md:col-span-3">
+          <div class="md:fixed mx-5 my-10 md:mx-10 lg:mx-20 lg:my-20">
+            <h1 class="mx-5 mb-10 text-6xl font-bold text-slate-800 md:mx-0 md:text-7xl lg:text-8xl">
+              <button onclick="location.reload()"><i class="bi bi-tools"></i></button>
+            </h1>
+            <h1 class="mx-5 mb-5 text-3xl font-bold text-slate-800 md:mx-0 md:text-4xl lg:text-5xl">im.sb</h1>
+            <p class="mx-5 mb-5 text-base font-light text-slate-800 md:mx-0 md:mb-48 lg:text-xl"><i class="bi bi-c-circle"></i> <span id="year">2024</span> built with <span class="rainbow-heart"><i class="bi bi-heart-fill"></i></span></p>
           </div>
         </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-hdd-fill"></i> Disk</h2>
-            <p class="text-slate-400">A cloud disk site</p>
+        <div class="rounded-lg md:col-span-6">
+          <div class="mx-5 my-10 md:mx-10 lg:mx-20 lg:my-20">
+            <div class="mx-5 grid grid-cols-1 gap-4 font-thin md:mx-0 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-2">
+                <a href="https://imsb.app" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl"><i class="bi bi-mastodon"></i></h2>
+                      <h2 class="mt-4 text-xl font-medium lg:text-2xl">Mastodon</h2>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-sm md:text-base lg:text-xl">A mastodon instance hosts by im.sb</p>
+                      <p class="mt-8 text-sm font-bold md:text-base lg:text-xl">Visit imsb.app</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-1">
+                <a href="https://jpgcom.com" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl"><i class="bi bi-file-image-fill"></i></h2>
+                      <h2 class="mt-4 text-xl font-medium lg:text-2xl">JPGCOM</h2>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-sm md:text-base lg:text-xl">A images hosting</p>
+                      <p class="mt-8 text-sm font-bold md:text-base lg:text-xl">Visit jpgcom.com</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-1">
+                <div class="group relative block h-48 md:h-54 lg:h-64">
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800">
+                    <div class="p-4 !pt-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl" id="tianqi-icon"><i class="bi bi-rainbow"></i></h2>
+                      <p class="mt-4 text-xl font-medium lg:text-2xl" id="tianqi">Loading...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-2">
+                <a href="https://www.7ed.net/get-api/bing.html" target="_blank" class="group relative block h-48 rounded-lg bg-black md:h-54 lg:h-64">
+                  <img alt="" src="https://7ed.net/bing/api" class="absolute inset-0 h-48 w-full rounded-lg object-cover opacity-75 transition-opacity group-hover:opacity-50 md:h-54 lg:h-64" />
+                  <div class="relative h-48 rounded-lg p-4 sm:p-6 md:h-54 lg:h-64 lg:p-8">
+                    <div class="mt-32 md:mt-34 lg:mt-42">
+                      <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                        <p class="text-sm text-white">Bing daily picture API <i class="bi bi-arrow-right"></i> 7ed.net</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-1">
+                <a href="https://pdf.im.sb" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl"><i class="bi bi-file-pdf-fill"></i></h2>
+                      <h2 class="mt-4 text-xl font-medium lg:text-2xl">PDF Tools</h2>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-sm md:text-base lg:text-xl">A pdf tools site.</p>
+                      <p class="mt-8 text-sm font-bold md:text-base lg:text-xl">Visit pdf.im.sb</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-1">
+                <a href="https://git.im.sb" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl"><i class="bi bi-git"></i></h2>
+                      <h2 class="mt-4 text-xl font-medium lg:text-2xl">Git Hosting</h2>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-sm md:text-base lg:text-xl">A git hosting site.</p>
+                      <p class="mt-8 text-sm font-bold md:text-base lg:text-xl">Visit git.im.sb</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-1">
+                <a href="https://memos.im.sb" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl"><i class="bi bi-bookmark-fill"></i></h2>
+                      <h2 class="mt-4 text-xl font-medium lg:text-2xl">Memos</h2>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-sm md:text-base lg:text-xl">A notes website.</p>
+                      <p class="mt-8 text-sm font-bold md:text-base lg:text-xl">Visit memos.im.sb</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-1">
+                <a href="https://check.im.sb" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl"><i class="bi bi-shield-fill-check"></i></h2>
+                      <h2 class="mt-4 text-xl font-medium lg:text-2xl">Website Check</h2>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-sm md:text-base lg:text-xl">A website check service.</p>
+                      <p class="mt-8 text-sm font-bold md:text-base lg:text-xl">Visit check.im.sb</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-2">
+                <a href="https://www.7ed.net/get-api/soup.html" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-xl font-medium lg:text-2xl" id="badsoup">有人一笑就很好看，你是一看就挺好笑。</p>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <h2 class="mt-4 text-sm md:text-base lg:text-xl"><i class="bi bi-file-text-fill"></i> 毒鸡汤 API <i class="bi bi-arrow-right"></i> 7ed.net</h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-2">
+                <a href="https://yxlog.com" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl"><i class="bi bi-file-person-fill"></i></h2>
+                      <h2 class="mt-4 text-xl font-medium lg:text-2xl">Web Master's Blog</h2>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-sm md:text-base lg:text-xl">关注站长 BLOG 交换友链</p>
+                      <p class="mt-8 text-sm font-bold md:text-base lg:text-xl">Visit yxlog.com</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+              <!-- block start -->
+              <div class="col-span-1 lg:col-span-1">
+                <a href="https://7ed.net" target="_blank" class="group relative block h-48 md:h-54 lg:h-64">
+                  <span class="absolute inset-0 rounded-lg border-2 border-dashed text-slate-800"></span>
+                  <div class="relative flex h-full transform items-end rounded-lg border-2 bg-white text-slate-800 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                    <div class="p-4 !pt-0 transition-opacity group-hover:absolute group-hover:opacity-0 sm:p-6 lg:p-8">
+                      <h2 class="text-3xl font-normal md:text-4xl lg:text-5xl"><i class="bi bi-three-dots"></i></h2>
+                      <h2 class="mt-4 text-xl font-medium lg:text-2xl">More Services</h2>
+                    </div>
+                    <div class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                      <p class="mt-4 text-sm md:text-base lg:text-xl">更多站长提供的服务</p>
+                      <p class="mt-8 text-sm font-bold md:text-base lg:text-xl">Visit 7ed.net</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- block end -->
+            </div>
           </div>
-          <a href="https://disk.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">disk.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
         </div>
       </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-file-pdf-fill"></i> PDF</h2>
-            <p class="text-slate-400">A pdf tools site</p>
-          </div>
-          <a href="https://pdf.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">pdf.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-git"></i> Git</h2>
-            <p class="text-slate-400">A git hosting</p>
-          </div>
-          <a href="https://git.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">git.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-shield-fill-check"></i> Check</h2>
-            <p class="text-slate-400">A website check service</p>
-          </div>
-          <a href="https://check.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">check.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-bookmark-fill"></i> Memos</h2>
-            <p class="text-slate-400">A notes website</p>
-          </div>
-          <a href="https://memos.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">memos.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <h2 class="text-xl font-normal"><i class="bi bi-file-text-fill"></i> 毒鸡汤</h2>
-          <p class="text-slate-400" id="badsoup">有人一笑就很好看，你是一看就挺好笑。</p>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-sky-100 bg-sky-50 p-4 hover:bg-slate-50 md:col-span-2">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-file-person-fill"></i> Blog</h2>
-            <p class="text-slate-400">关注站长 BLOG 交换友链</p>
-          </div>
-          <a href="https://yjk.im.sb" target="_blank" class="rounded-md border border-sky-100 bg-white p-2 text-center text-slate-600 hover:font-normal">yjk.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- start -->
-      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
-        <div class="grid h-full content-between text-slate-600">
-          <div>
-            <h2 class="text-xl font-normal"><i class="bi bi-three-dots"></i> 7ED</h2>
-            <p class="text-slate-400">更多站长提供的服务</p>
-          </div>
-          <a href="https://7ed.net" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">7ed.net <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
-        </div>
-      </div>
-      <!-- end -->
     </div>
-  </div>
-  <div class="my-20 text-center font-thin text-slate-400 md:text-left">
-    <p><i class="bi bi-c-circle"></i> 2024 YJK, ALL RIGHTS RESERVED.
-  </div>
-</div>
-
-</body>
+  </body>
 </html>
+<script>
+  var _0xod0='jsjiami.com.v7';const _0x51c020=_0x217e;function _0x217e(_0x4aa1ec,_0x52eb0e){const _0x2ab902=_0x2ab9();return _0x217e=function(_0x217e17,_0x270858){_0x217e17=_0x217e17-0x8e;let _0x45822c=_0x2ab902[_0x217e17];if(_0x217e['GmMFTo']===undefined){var _0x140079=function(_0x1743af){const _0x3c17b3='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x21ef16='',_0x3ad69a='';for(let _0x55c6fb=0x0,_0x220f46,_0x416f00,_0x5f2344=0x0;_0x416f00=_0x1743af['charAt'](_0x5f2344++);~_0x416f00&&(_0x220f46=_0x55c6fb%0x4?_0x220f46*0x40+_0x416f00:_0x416f00,_0x55c6fb++%0x4)?_0x21ef16+=String['fromCharCode'](0xff&_0x220f46>>(-0x2*_0x55c6fb&0x6)):0x0){_0x416f00=_0x3c17b3['indexOf'](_0x416f00);}for(let _0x1f1650=0x0,_0x3b4c57=_0x21ef16['length'];_0x1f1650<_0x3b4c57;_0x1f1650++){_0x3ad69a+='%'+('00'+_0x21ef16['charCodeAt'](_0x1f1650)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x3ad69a);};const _0x3ab080=function(_0x23c192,_0x4fa2bf){let _0x3a0f5c=[],_0x3a4f78=0x0,_0x46db57,_0x57e499='';_0x23c192=_0x140079(_0x23c192);let _0x13457e;for(_0x13457e=0x0;_0x13457e<0x100;_0x13457e++){_0x3a0f5c[_0x13457e]=_0x13457e;}for(_0x13457e=0x0;_0x13457e<0x100;_0x13457e++){_0x3a4f78=(_0x3a4f78+_0x3a0f5c[_0x13457e]+_0x4fa2bf['charCodeAt'](_0x13457e%_0x4fa2bf['length']))%0x100,_0x46db57=_0x3a0f5c[_0x13457e],_0x3a0f5c[_0x13457e]=_0x3a0f5c[_0x3a4f78],_0x3a0f5c[_0x3a4f78]=_0x46db57;}_0x13457e=0x0,_0x3a4f78=0x0;for(let _0x1b89a0=0x0;_0x1b89a0<_0x23c192['length'];_0x1b89a0++){_0x13457e=(_0x13457e+0x1)%0x100,_0x3a4f78=(_0x3a4f78+_0x3a0f5c[_0x13457e])%0x100,_0x46db57=_0x3a0f5c[_0x13457e],_0x3a0f5c[_0x13457e]=_0x3a0f5c[_0x3a4f78],_0x3a0f5c[_0x3a4f78]=_0x46db57,_0x57e499+=String['fromCharCode'](_0x23c192['charCodeAt'](_0x1b89a0)^_0x3a0f5c[(_0x3a0f5c[_0x13457e]+_0x3a0f5c[_0x3a4f78])%0x100]);}return _0x57e499;};_0x217e['ysuICX']=_0x3ab080,_0x4aa1ec=arguments,_0x217e['GmMFTo']=!![];}const _0x41c669=_0x2ab902[0x0],_0x2cd2b=_0x217e17+_0x41c669,_0x84e275=_0x4aa1ec[_0x2cd2b];return!_0x84e275?(_0x217e['UgbcSx']===undefined&&(_0x217e['UgbcSx']=!![]),_0x45822c=_0x217e['ysuICX'](_0x45822c,_0x270858),_0x4aa1ec[_0x2cd2b]=_0x45822c):_0x45822c=_0x84e275,_0x45822c;},_0x217e(_0x4aa1ec,_0x52eb0e);}function _0x2ab9(){const _0x1c73c6=(function(){return[_0xod0,'AfWjOdsndjOqiamdibe.EctVoYRmMy.vTb7IdKTu==','rCobjmouWObrWQbObCkf','EmkxlxzO','WRvjymk8W63cR8oocW','WP3cRCkXWPtdVSoVpKi','fCkMomkPo1/dUmogW6RdK8oO','W4BdT8kWWRVdGSo9owNdRW','efpdOYyLcSk/','cgi7WOXDWQCGW78','W4nfmmoMuSkqbM07xc7dJa','5AEl5Rg25yQg6l6O5AEB6lwK','p8oQDbGxrmkKW5q','hCkHWQhdPMjiWQNcO8ogW7jBWOT2','W73dHtVdIxRdN8k5tJC5W5tdGW','zCk0uWSRE8k9W4XB','6iYC5y295Aw65RcE5Awx6lAyWOu','WQH5kcVdJSowWPS','v0u0WOlcKGNcTSoumH5xW5FcMGa','whtdQSkfWRJcIG'].concat((function(){return['g2qXWOnsW6NdTKVcNNC2FdnSob5Sxw7cUComWQ4zrmkoWPddR0VdQGDBlmo6WQZcSwxcL8o3W7BdVty2W5RcTthcUMtcLhhdTCo6hKZdNmkWW4lcSLBdTHjkWQKzW7tcIr1KhI3dTSk0WOOVAX3dLCoGkJi','bSomWO/cK8ob','WPi8rmkRzSkWW7bJWOuUW6RcN8khW6jc','WRropmk1W5tcV8o1jCkl','W7aNq3DFW5JcKSooWPdcQa','cmosWQpcUCoA','tejEW4BdOG','qWdcTcfqW416WPhcVvO','WQ5JxIvHWRBcJxlcPmk+W4iu','W4vloSoRvmkDi28Owt7dRW','jMmzW6DdvSkTW5XXEIhcUmofW5LrFmkzy0mVWRLmWQdcGazOvh4','W51MW6lcS0CZB8ktWRTcWRaQt1BdSSkjlmoi','W7yVr3yTWOhcJmoZWQxcMcqB','W59vW4TXW58','W5bHk2asWOdcSG','pCkjW6S','4OshWR7cTGG','cCowhxFcO1FcVa','WODyluC8n8oiemkoW7C','ktWWl8ocWPbnuSkE'].concat((function(){return['pCoIcfXQbmk7W6r2zIrX','W77dJJ/dJcVcJ8kCwbSO','WQqkWRtdMCooW53cGG','A8k/ssS1vSkeW6r5EXv/xmoS','W7yMdhqXW6pcRrlcGSkLW55Dlmkp','imo0W7qmBG86','WRXQW4neW5VdUCkIe8kQomoEp10','cwjeW45wWRWFW5VcS3m','tIOuWQqpgCo4WPGID2FdSCkjWPu','WRpdNSokomoNbbBcQea','g0xdONS','gSolWOe+smkzqxiw','4OsVf8kRW4VdQCodWOBdT3KoWRVcIG','WQjpW5lcTmoJW7ZcPCkBW6js','WQr1rmoOkSoXWQmWWPGSWQJdLSkhWQalw8kbW77cM8k3W4BcGmk5d1mvWOtcPmoVfmkVrGmQWPJcLSodjYOGWPtcHa','l8o8BLJcG8kRCc8dW5e4edZdPa','EgyUd8ozWRvqFSohWRtdMmkxW5HqW7ddVam','WRfnpCoaWPFdJmordSkMWO9VWQa'];}()));}()));}());_0x2ab9=function(){return _0x1c73c6;};return _0x2ab9();};(function(_0x3033aa,_0xfe52c4,_0x3e3f9c,_0x38e372,_0x211137,_0x5114ae,_0x31ecc8){return _0x3033aa=_0x3033aa>>0x7,_0x5114ae='hs',_0x31ecc8='hs',function(_0x420a15,_0x27011f,_0x49bc11,_0x23ddf8,_0x551fa3){const _0x2296f0=_0x217e;_0x23ddf8='tfi',_0x5114ae=_0x23ddf8+_0x5114ae,_0x551fa3='up',_0x31ecc8+=_0x551fa3,_0x5114ae=_0x49bc11(_0x5114ae),_0x31ecc8=_0x49bc11(_0x31ecc8),_0x49bc11=0x0;const _0xe9b177=_0x420a15();while(!![]&&--_0x38e372+_0x27011f){try{_0x23ddf8=-parseInt(_0x2296f0(0xc1,'tY8#'))/0x1*(parseInt(_0x2296f0(0xa8,'n6j*'))/0x2)+-parseInt(_0x2296f0(0xb4,'JWsr'))/0x3*(-parseInt(_0x2296f0(0xbb,'E3N!'))/0x4)+parseInt(_0x2296f0(0xbd,'sZ4M'))/0x5+-parseInt(_0x2296f0(0xb5,'aKi)'))/0x6*(-parseInt(_0x2296f0(0xa4,'tY8#'))/0x7)+parseInt(_0x2296f0(0x93,'Hwmi'))/0x8*(parseInt(_0x2296f0(0xa2,'dBGr'))/0x9)+-parseInt(_0x2296f0(0xbc,'N&mk'))/0xa*(-parseInt(_0x2296f0(0x97,'xFj%'))/0xb)+-parseInt(_0x2296f0(0xb7,'JWsr'))/0xc*(parseInt(_0x2296f0(0xa9,'[aqh'))/0xd);}catch(_0x5f5897){_0x23ddf8=_0x49bc11;}finally{_0x551fa3=_0xe9b177[_0x5114ae]();if(_0x3033aa<=_0x38e372)_0x49bc11?_0x211137?_0x23ddf8=_0x551fa3:_0x211137=_0x551fa3:_0x49bc11=_0x551fa3;else{if(_0x49bc11==_0x211137['replace'](/[AfIWyYVOuEneKRTtdMqb=]/g,'')){if(_0x23ddf8===_0x27011f){_0xe9b177['un'+_0x5114ae](_0x551fa3);break;}_0xe9b177[_0x31ecc8](_0x551fa3);}}}}}(_0x3e3f9c,_0xfe52c4,function(_0x48c7ec,_0x2e563b,_0x54e5c4,_0x1fffa8,_0x4597b3,_0x18e592,_0x2c86ba){return _0x2e563b='\x73\x70\x6c\x69\x74',_0x48c7ec=arguments[0x0],_0x48c7ec=_0x48c7ec[_0x2e563b](''),_0x54e5c4='\x72\x65\x76\x65\x72\x73\x65',_0x48c7ec=_0x48c7ec[_0x54e5c4]('\x76'),_0x1fffa8='\x6a\x6f\x69\x6e',(0x1979a5,_0x48c7ec[_0x1fffa8](''));});}(0x6500,0x18edc,_0x2ab9,0xcc),_0x2ab9)&&(_0xod0=_0x51c020(0xc5,'&3TF'));const weatherIcons={'xue':'bi-snow','lei':'bi-cloud-lightning-fill','shachen':_0x51c020(0xa1,'I(4M'),'wu':'bi-cloud-fog2-fill','bingbao':'bi-cloud-snow-fill','yun':_0x51c020(0xab,'0]t)'),'yu':_0x51c020(0x9a,'[SnP'),'yin':_0x51c020(0xb3,'dBGr'),'qing':_0x51c020(0xb9,'v2yj')};async function fetchWeather(){const _0x476fb4=_0x51c020,_0x3ef35e={'kLXQa':function(_0x190c76,_0x2fa637){return _0x190c76(_0x2fa637);},'wKEAT':_0x476fb4(0x8f,'GAA1'),'yUikO':'tianqi-icon','qpNTS':_0x476fb4(0x8e,'5L8L'),'ayDte':_0x476fb4(0xc3,']UyM')};try{const _0x2afd39=await _0x3ef35e[_0x476fb4(0xb6,'DlIR')](fetch,_0x3ef35e[_0x476fb4(0x90,'*q^N')]),_0xc32d05=await _0x2afd39[_0x476fb4(0xad,'6Ct&')](),_0x205381=document[_0x476fb4(0xa6,'CP4b')](_0x3ef35e[_0x476fb4(0x9c,'$AZ6')]);_0x205381[_0x476fb4(0xac,')3E]')]=_0x476fb4(0x99,'0]t)')+(weatherIcons[_0xc32d05[_0x476fb4(0xa0,'8h[P')]]||'bi-clouds')+'\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';const _0x1dc8d3=document[_0x476fb4(0xb2,'MZD%')](_0x3ef35e[_0x476fb4(0x95,'(Lv9')]);_0x1dc8d3['innerHTML']=_0x476fb4(0x91,'aP]D')+_0xc32d05[_0x476fb4(0x9e,'kNvb')]+_0x476fb4(0x9f,'m69[')+_0xc32d05[_0x476fb4(0xae,'bT&e')]+'~'+_0xc32d05[_0x476fb4(0x9d,'DN0f')]+_0x476fb4(0xaf,'5L8L');}catch(_0x1aadc2){console['error'](_0x3ef35e['ayDte'],_0x1aadc2),document['getElementById'](_0x3ef35e[_0x476fb4(0x94,'*q^N')])[_0x476fb4(0xba,'g*i#')]=_0x476fb4(0xb1,'aP]D'),document['getElementById'](_0x3ef35e['qpNTS'])[_0x476fb4(0xc2,'CP4b')]=_0x476fb4(0xbe,'fEgt');}}window['onload']=fetchWeather;var version_ = 'jsjiami.com.v7';
+</script>
 <script>
   var xhr = new XMLHttpRequest();
   xhr.open('get', 'https://www.7ed.net/soup/api');
@@ -163,5 +226,9 @@
     }
   }
   xhr.send();
+</script>
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
 </script>
 <script async defer src="https://tj.7ed.net/tracker.js" data-website-id="clsu3txbk0005mz4flsm4pgls"></script>

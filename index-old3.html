@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+  <title>@im.sb</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.sevencdn.com/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css">
+  <style>
+    /*
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246/0.5);--tw-ring-offset-shadow:0 0 transparent;--tw-ring-shadow:0 0 transparent;--tw-shadow:0 0 transparent;--tw-shadow-colored:0 0 transparent}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246/0.5);--tw-ring-offset-shadow:0 0 transparent;--tw-ring-shadow:0 0 transparent;--tw-shadow:0 0 transparent;--tw-shadow-colored:0 0 transparent}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.mx-5{margin-left:1.25rem;margin-right:1.25rem}.mx-auto{margin-left:auto;margin-right:auto}.my-20{margin-top:5rem}.mb-20,.my-20{margin-bottom:5rem}.mt-20{margin-top:5rem}.grid{display:grid}.h-40{height:10rem}.h-full{height:100%}.w-full{width:100%}.max-w-3xl{max-width:48rem}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.content-between{align-content:space-between}.gap-5{gap:1.25rem}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.border{border-width:1px}.border-sky-100{--tw-border-opacity:1;border-color:rgb(224 242 254/var(--tw-border-opacity))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity))}.bg-sky-50{--tw-bg-opacity:1;background-color:rgb(240 249 255/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.p-2{padding:.5rem}.p-4{padding:1rem}.text-center{text-align:center}.text-right{text-align:right}.text-5xl{font-size:3rem;line-height:1}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-normal{font-weight:400}.font-thin{font-weight:100}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity))}.hover\:font-normal:hover{font-weight:400}@media (min-width:768px){.md\:col-span-2{grid-column:span 2/span 2}.md\:mx-0{margin-left:0;margin-right:0}.md\:mb-48{margin-bottom:12rem}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:gap-10{gap:2.5rem}.md\:text-left{text-align:left}}
+  </style>
+</head>
+<body>
+<div class="container mx-auto mt-20">
+  <h1 class="mx-5 mb-20 text-5xl font-bold text-slate-800 md:mx-0 md:mb-48"><button onclick="location.reload()"><i class="bi bi-triangle-fill"></i></button> im.sb</h1>
+  <div class="w-full max-w-3xl">
+    <div class="mx-5 grid grid-cols-1 gap-5 font-thin md:mx-0 md:grid-cols-3 md:gap-10">
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50 md:col-span-2">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-mastodon"></i> Mastodon</h2>
+            <p class="text-slate-400">A mastodon instance hosts by im.sb</p>
+          </div>
+          <a href="https://imsb.app" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">imsb.app <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <h2 class="text-xl font-normal"><i class="bi bi-cloud-sun-fill"></i> 天气</h2>
+          <iframe allowtransparency="true" frameborder="0" width="100%" height="36" scrolling="no" src="https://tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=1&bd=0&k=000000&f=c0c0c0&ltf=808080&htf=808080&q=1&e=1&a=1&c=54511&w=180&h=36&align=center"></iframe>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-file-image-fill"></i> JPG</h2>
+            <p class="text-slate-400">A images hosting</p>
+          </div>
+          <a href="https://jpg.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">jpg.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 md:col-span-2 bg-slate-50" style="background-image: url(https://7ed.net/bing/api?size=640x480);  background-position: center; background-size: cover;">
+        <div class="grid h-full content-between text-slate-600">
+          <div>&nbsp;</div>
+          <div class="text-right">
+            <a href="https://www.7ed.net/get-api/bing.html" target="_blank" class="p-2 text-white"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-hdd-fill"></i> Disk</h2>
+            <p class="text-slate-400">A cloud disk site</p>
+          </div>
+          <a href="https://disk.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">disk.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-file-pdf-fill"></i> PDF</h2>
+            <p class="text-slate-400">A pdf tools site</p>
+          </div>
+          <a href="https://pdf.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">pdf.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-git"></i> Git</h2>
+            <p class="text-slate-400">A git hosting</p>
+          </div>
+          <a href="https://git.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">git.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-shield-fill-check"></i> Check</h2>
+            <p class="text-slate-400">A website check service</p>
+          </div>
+          <a href="https://check.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">check.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-bookmark-fill"></i> Memos</h2>
+            <p class="text-slate-400">A notes website</p>
+          </div>
+          <a href="https://memos.im.sb" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">memos.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <h2 class="text-xl font-normal"><i class="bi bi-file-text-fill"></i> 毒鸡汤</h2>
+          <p class="text-slate-400" id="badsoup">有人一笑就很好看，你是一看就挺好笑。</p>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-sky-100 bg-sky-50 p-4 hover:bg-slate-50 md:col-span-2">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-file-person-fill"></i> Blog</h2>
+            <p class="text-slate-400">关注站长 BLOG 交换友链</p>
+          </div>
+          <a href="https://yjk.im.sb" target="_blank" class="rounded-md border border-sky-100 bg-white p-2 text-center text-slate-600 hover:font-normal">yjk.im.sb <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+      <!-- start -->
+      <div class="h-40 rounded-lg border border-slate-100 p-4 hover:bg-slate-50">
+        <div class="grid h-full content-between text-slate-600">
+          <div>
+            <h2 class="text-xl font-normal"><i class="bi bi-three-dots"></i> 7ED</h2>
+            <p class="text-slate-400">更多站长提供的服务</p>
+          </div>
+          <a href="https://7ed.net" target="_blank" class="rounded-md border border-slate-200 bg-white p-2 text-center text-slate-600 hover:font-normal">7ed.net <i class="bi bi-box-arrow-up-right text-slate-400"></i></a>
+        </div>
+      </div>
+      <!-- end -->
+    </div>
+  </div>
+  <div class="my-20 text-center font-thin text-slate-400 md:text-left">
+    <p><i class="bi bi-c-circle"></i> 2024 YJK, ALL RIGHTS RESERVED.
+  </div>
+</div>
+
+</body>
+</html>
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://www.7ed.net/soup/api');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var badsoup = document.getElementById('badsoup');
+      badsoup.innerText = data.badsoup;
+    }
+  }
+  xhr.send();
+</script>
+<script async defer src="https://tj.7ed.net/tracker.js" data-website-id="clsu3txbk0005mz4flsm4pgls"></script>
